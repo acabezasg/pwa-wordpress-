@@ -1,0 +1,20 @@
+div.barr
+        img.logocispe(src=("/wp-content/themes/pwawptheme/images/cispe-blanco.png"))
+
+
+ul(class="nav nav-pills nav-fill")
+  li.nav-item
+    -if (current_active == 'inicio')
+      a(class="nav-link active" href="/wp-content/themes/pwawptheme/home.html") Inicio	
+    -else
+      a(class="nav-link" href="/wp-content/themes/pwawptheme/home.html") Inicio
+  li.nav-item
+    -if (current_active == 'nosotros')
+      a(class="nav-link active" href="/wp-content/themes/pwawptheme/blogs.html") Nosotros
+    -else
+      a(class="nav-link" href="/wp-content/themes/pwawptheme/blogs.html") Nosotros
+  li.nav-item
+    -if (current_active == 'contactanos')
+      a(class="nav-link active" href="/wp-content/themes/pwawptheme/pages.html") Contáctanos
+    -else
+      a(class="nav-link" href="/wp-content/themes/pwawptheme/pages.html") Contáctanos
